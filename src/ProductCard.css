@@ -1,0 +1,36 @@
+.product-card {
+  border: 1px solid #e1e1e1;
+  padding: 10px;
+  margin: 10px;
+  max-width: 300px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.product-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.star-rating {
+  font-size: 24px;
+}
+
+.star-filled {
+  color: orange;
+}
+
+.star-empty {
+  color: #ccc;
+}
+
+.cart-buttons {
+  margin-top: 10px;
+}
+
+.cart-buttons button {
+  margin: 0 5px;
+}
+.cart-details {
+  size : 1000;
+}
