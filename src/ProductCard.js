@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import './ProductCard.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
+import 'font-awesome/css/font-awesome.min.css';
 
 const StarRating = ({ rating }) => {
   const stars = [];
@@ -20,7 +23,7 @@ const StarRating = ({ rating }) => {
 };
 
 const ProductCard = ({ product, inCart, addToCart, removeFromCart, imageSrc }) => {
-  const [quantity, setQuantity] = useState(inCart ? 1 : 0); // Start with 1 if already in cart
+  const [quantity, setQuantity] = useState(inCart ? 1 : 0); 
 
   const increaseQuantity = () => {
     if (quantity < 15) { // Allow max 2 items in the cart
@@ -50,7 +53,7 @@ const ProductCard = ({ product, inCart, addToCart, removeFromCart, imageSrc }) =
 
         <StarRating rating={product.rating} /> 
       </div>
-      
+      {/* <FontAwesomeIcon icon={faStar} /> */}
       <div className="cart-buttons">
         <button onClick={decreaseQuantity}>-</button>
         <button onClick={increaseQuantity}>+</button>
